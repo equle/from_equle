@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>펭귄</h2>
+        <!-- <img src="static/img/pa.jpg"> -->
+        <a href = {{ url_for ('hello', name='펭귄') }}>
+        <img src={{ url_for('static', filename = 'img/pa.jpg') }}>
+        </a>
+    </body>
+</html>
