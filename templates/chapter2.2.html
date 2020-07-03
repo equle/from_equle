@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block title %}gamepage{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+<br>
+<h3>오늘은 유난히 고요하고 힘이 없는것 같아 평소같지 않다..</h3>
+<h3>보고싶다..</h3>
+<ol>
+    <li><a href={{ url_for('movepage' ,data='chapter3') }}>다음</a></li>
+</ol>
+
+{% endblock %}

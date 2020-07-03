@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html>
-    <head><title>indexpage</title></head>
-<body>
-
-<h2>index</h2>
-
-<ol>
-    <li><a href={{ url_for('movepage' ,data='loginpage') }}>login page</a></li>
-    <li><a href={{ url_for('movepage' ,data='gamepage') }}>game page</a></li>
-</ol>
-
-</body>
-</html>
+{% extends "layout.html" %}
+{% block title %}index{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+    <h2>main page</h2>
+    <p>wellcome to my page </p>
+{% endblock %}

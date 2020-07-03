@@ -1,17 +1,15 @@
-{% extends "layout.html" %}
-{% block title %} loginpage {% endblock %}
-{% block head %}
-  {{ super() }}
-{% endblock %}
-{% block content %}
-<h2>KIT 웹앱 프로그래밍<h2>
-
-<form action="/login" method="POST">
+  {% extends "layout.html" %}
+  {% block title %}singpage{% endblock %}
+  {% block head %}
+    {{ super() }}
+  {% endblock %}
+  {% block content %}
+  <h2>회원가입</h2>
+<form action="/method" method="POST">
   <label for="fname">id:</label><br>
   <input type="text" id="fname" name="id"><br>
   <label for="lname">pw</label><br>
   <input type="text" id="lname" name="pw"><br><br>
   <input type="submit" value="확인">
 </form> 
-
 {% endblock %}

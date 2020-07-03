@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block title %}gamepage{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+<br>
+<h3>핑핑이의 울음소리를 들었지만 밖으로 나온 {{data.name}}는 찝찝함을 떨쳐내지 못합니다.</h3>
+<ol>
+    <li><a href={{ url_for('movepage' ,data='chapter2') }}>다음</a></li>
+</ol>
+
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block title %}infopage{% endblock %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+{% block content %}
+
+    <h2>학생 정보 출력</h2>
+
+    {% for i in data %}
+
+    {{ loop.index }}. 
+    학번: {{ i[0] }} <br>
+    이름: {{ i[1] }} <br>
+    
+    {% endfor %}
+
+{% endblock %}

@@ -1,12 +1,14 @@
-<!DOCTYPE html>
-<html>
-  <head><title>gameintro</title></head>
-<body>
-    <h2>{{character.name}} 님의 게임이 시작합니다.</h2>
+{% extends "layout.html" %}
+{% block title %}gamepage{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+<br>
+    <h2>{{data.name}} 님의 게임이 시작합니다.</h2><br><br>
     <h3>스테이터스</h3>
-    <h3>Name : {{character.name}}</h3>
-    <h3>Lv : {{character.Hp}}</h3>
-    <h3>Item : {{character.item[0]}}, {{character.item[1]}}, {{character.item[2]}}</h3>
-    <h3>skill : {{character.skill[0]}}, {{character.skill[1]}}, {{character.skill[2]}}</h3>
-</body>
-</html>
+    <h3>Name : {{data.name}}</h3>
+    <h3>Item : {{data.item[0]}}, {{data.item[1]}}, {{data.item[2]}}</h3>
+    <h3>skill : {{data.skill[0]}}, {{data.skill[1]}}, {{data.skill[2]}}</h3><br><br>
+    <a href={{ url_for('movepage' ,data='chapter1') }}>확인</a>
+{% endblock %}
