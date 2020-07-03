@@ -9,14 +9,17 @@ def index():
 # def hello():
 #     return render_template("hello.html")
 
+
 @app.route('/hello/<name>')
 def hello(name):
     return "hello {}".format(name)
 
+# login.html
 @app.route('/login')
 def login():
     return render_template("login.html")
 
+# login merhod get, post
 @app.route('/method', methods=['GET', 'POST'])
 def method():
     if request.method == 'GET':
@@ -35,6 +38,7 @@ def method():
         
         return "POST로 전달({},{})".format(num, name)
 
+#test 1,2
 @app.route('/test')
 def test1():
     return 'test1'
@@ -43,6 +47,7 @@ def test1():
 def test2():
     return 'test2'
 
+# redirect to naver, duam
 @app.route('/naver')
 def naver():
     return render_template("naver.html")
@@ -51,16 +56,18 @@ def naver():
 def daum():
     return redirect("https://www.daum.net/")
 
+# error page
 @app.errorhandler(404)
 def page_not_found(error):
     return "페이지가 없습니다. URL를 확인 하세요", 404
 
-@app.route('/nopage')
-def nopage ():
-    print("404로 보냅니다.")
-    abort(404)
-    return "404로 보냅니다."
+# @app.route('/nopage')
+# def nopage ():
+#     print("404로 보냅니다.")
+#     abort(404)
+#     return "404로 보냅니다."
 
+# pg.html
 @app.route('/pang')
 def pang ():
     return render_template("pg.html")

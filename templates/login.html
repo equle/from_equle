@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-<html> 
-     <body> 
-         <h2>KIT 웹앱 프로그래밍</h2> 
-         <form action="http://127.0.0.1:5000/method" method="GET"> 
-            <label for="fname">학번:</label><br> 
-            <input type="text" id="fname" name="num" value=""><br> 
-            <label for="lname">이름:</label><br> 
-            <input type="text" id="lname" name="name" value=""><br><br> 
-            <input type="submit" value="확인"> 
-        </form> 
-    </body> 
+<html>
+  <head><title>loginpage</title></head>
+<body>
+
+<h2>KIT 웹앱 프로그래밍<h2>
+
+<form action="/putinfo" method="POST">
+  <label for="fname">ID:</label><br>
+  <input type="text" id="fname" name="ID"><br>
+  <label for="lname">PW</label><br>
+  <input type="password" id="lname" name="PW"><br><br>
+  <input type="submit" value="확인">
+</form> 
+
+</body>
 </html>
