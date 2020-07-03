@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block title %}gamepage{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+<br>
+<h3>시장</h3>
+<h3>쿵. 쿵. 아침이지만 어두운 그림자가 진다.</h3><br>
+<h3>안녕 좋은 아침이야 {{data.name}}  </h3>
+<h3>운이 안좋게도 깡패 버블배스와 마주쳐 시비가 걸렸다.</h3>
+<h3>...</h3>
+<br><br>
+<h3>아끼는 집게리아 모자가 조금 찢어졌다..</h3><br>
+<ol>
+    <li><a href={{ url_for('movepage' ,data='chapter4') }}>다음</a></li>
+</ol>
+
+{% endblock %}

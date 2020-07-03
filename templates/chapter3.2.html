@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block title %}gamepage{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+<br>
+<h3>띵동~</h3><br>
+<h3>와!! {{data.name}}기다리고 있었어! 그런데 자주 이렇게 둘러가는거 힘들지 않아?</h3><br>
+<h3>친구를 보러오는 건데 뭘~ 오면서 풍경도 보고 말이야</h3><br>
+<h3>역시 넌 다정한 친구야! 둘러오는게 힘들단걸 알면서도 기다리게 된다니까~!</h3><br>
+<h3>고마워~!</h3><br>
+<h3>오늘은 쿵푸말고 차마시고 갈래? 이번에 육지에서 가져온 찻잎이 정말 맛있거든!!</h3>
+<br><br>
+<h3>[인생을 즐기는 삶 업적 달성!]</h3><br>
+<ol>
+    <li><a href={{ url_for('movepage' ,data='chapter04') }}>다음</a></li>
+</ol>
+
+{% endblock %}

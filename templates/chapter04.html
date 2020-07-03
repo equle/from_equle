@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block title %}gamepage{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+<br>
+<h3>다람이네 에서 휴식을 취해서 인지 컨디션이 조금 좋아진것 같다.</h3><br>
+<h3>집게리아에 도착했다. "{{data.name}}!!"</h3><br>
+<h3>"오늘 컨디션이 좋아보이는군 {{data.name}}!"</h3><br>
+<h3>"네 사장님!!"</h3>
+<h3>"좋아 좋아! 오늘 버거맛은 환상적이겠어! 오늘도 열심히하게!! 하하하"</h3><br>
+<br>
+<h3>좋아!! 오늘도 열심히 하자구!!</h3><br><br>
+<ol>
+    <li><a href={{ url_for('movepage' ,data='chapter4.1') }}>오늘 하루는 빨리빨리 만들자!</a></li>
+    <li><a href={{ url_for('movepage' ,data='chapter4.2') }}>평소처럼만 하자!</a></li>
+    <li><a href={{ url_for('movepage' ,data='chapter4.3') }}>오늘은 천천히 공들여 만들어 볼까?</a></li>
+</ol>
+
+{% endblock %}

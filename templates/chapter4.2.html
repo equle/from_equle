@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block title %}gamepage{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+<br>
+<h3>오늘도 평소같이 잘 일한 것 같다!</h3><br>
+<h3>정장을 입은 한 물고기가 어떤 종이를 들고 있다.</h3><br>
+<h3>"불시 음식점 감사가 이뤄지겠습니다."</h3><br>
+<br><br>
+<h3>평가는 어떻게 될까?</h3><br>
+<ol>
+    <li><a href={{ url_for('movepage' ,data='chapter5.2') }}>다음</a></li>
+</ol>
+
+{% endblock %}

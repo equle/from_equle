@@ -54,6 +54,38 @@ def movepage(data):
         character = game.get_charact()
         return render_template('chapter2.2.html', data = character)
 
+    elif data == 'chapter3':
+        character = game.get_charact()
+        return render_template('chapter3.html', data = character)
+    
+    elif data == 'chapter3.1':
+        character = game.get_charact()
+        return render_template('chapter3.1.html', data = character)
+    
+    elif data == 'chapter3.2':
+        character = game.get_charact()
+        return render_template('chapter3.2.html', data = character)
+    
+    elif data == 'chapter4':
+        character = game.get_charact()
+        return render_template('chapter4.html', data = character)
+    
+    elif data == 'chapter04':
+        character = game.get_charact()
+        return render_template('chapter04.html', data = character)
+    
+    elif data == 'chapter4.1':
+        character = game.get_charact()
+        return render_template('chapter4.1.html', data = character)
+    
+    elif data == 'chapter4.2':
+        character = game.get_charact()
+        return render_template('chapter4.2.html', data = character)
+    
+    elif data == 'chapter4.3':
+        character = game.get_charact()
+        return render_template('chapter4.3.html', data = character)
+
     else :
         return render_template('index.html')
 

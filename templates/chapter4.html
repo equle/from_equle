@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block title %}gamepage{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+<br>
+<h3>집게리아에 도착했다. "{{data.name}}!!"</h3><br>
+<h3>모자와 옷이 찢어지고 눈와 몸에 멍이 들어 꼴이 말이 아니었다.</h3><br>
+<h3>"꼴이 왜이런거냐 {{data.name}}! 이래서야 오늘 버거 만들 수 있겠어!"</h3><br>
+<br>
+<h3>비록 이꼴이어도 내가 가장 좋아하는 일을 쉴순 없어!!</h3><br><br>
+<ol>
+    <li><a href={{ url_for('movepage' ,data='chapter4.1') }}>오늘 하루는 빨리빨리 만들자!</a></li>
+    <li><a href={{ url_for('movepage' ,data='chapter4.2') }}>평소처럼만 하자!</a></li>
+    <li><a href={{ url_for('movepage' ,data='chapter4.3') }}>오늘은 천천히 공들여 만들어 볼까?</a></li>
+</ol>
+
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block title %}gamepage{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+<br>
+<h3>오늘은 천천히 만들기로 했으니까 더 맛있게 만들어야지!</h3><br>
+<h3>원래 깔끔하게 만든 음식이 더 맛있어 지는 법이야.</h3><br>
+<h3>그리고 내 정성 역시 그렇게 만들어지는 요소중 하나지!</h3><br>
+<h3>정장을 입은 한 물고기가 어떤 종이를 들고 있다.</h3><br>
+<h3>"불시 음식점 감사가 이뤄지겠습니다."</h3><br>
+<br><br>
+<h3>갑작스런 불시 감사지만 당당한 기분이야!</h3><br>
+<ol>
+    <li><a href={{ url_for('movepage' ,data='chapter5.3') }}>다음</a></li>
+</ol>
+
+{% endblock %}
